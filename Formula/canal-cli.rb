@@ -5,19 +5,19 @@
 class CanalCli < Formula
   desc "Canal - the all-in-one Customer Platform"
   homepage "https://trycanal.com"
-  version "0.0.5"
+  version "0.0.6"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/trycanal/cli/releases/download/v0.0.5/cli_0.0.5_darwin_amd64.tar.gz"
-    sha256 "b07d2a8c72a4ffc80f4f95d11bf981c8564b5da688272ef0601042115ac3f7de"
+    url "https://github.com/trycanal/cli/releases/download/v0.0.6/cli_0.0.6_darwin_amd64.tar.gz"
+    sha256 "d9ca406c5ff2865dadf8d7ed5ebc90adff7c02245fa039874084b4088eb9a49d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/trycanal/cli/releases/download/v0.0.5/cli_0.0.5_linux_amd64.tar.gz"
-    sha256 "0642f185117bc1dac251ce359922187f841aab430a94d1e0db28b43d50b0751a"
+    url "https://github.com/trycanal/cli/releases/download/v0.0.6/cli_0.0.6_linux_amd64.tar.gz"
+    sha256 "79d1cbd2ad7b2098d7154b4861523f33a03937b82a735cdb33d50c1e8d8ba3c2"
   end
 
   def install
-    bin.install "cli"
+    bin.install "canal"
   end
 end
